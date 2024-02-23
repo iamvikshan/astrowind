@@ -32,8 +32,23 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
-  >
+    
+    >
+  <Fragment slot="image">
+    <div class="relative h-0 pb-[56.25%]">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dsTXcSeAZq8"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+        allowfullscreen
+        class="absolute top-0 left-0 w-full h-full"
+      >
+      </iframe>
+    </div>
+  </Fragment>
+
     <Fragment slot="title">
       Free template for <span class="hidden xl:inline">creating websites with</span>
       <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS

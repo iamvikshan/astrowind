@@ -1,62 +1,68 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Youtube',
+      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+    },
+
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Blog List',
+          href: getBlogPermalink(),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Categories',
+          href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Tags',
+          href: getPermalink('astro', 'tag'),
         },
       ],
     },
+
     {
-      text: 'Pages',
+      text: 'Store',
+      href: getPermalink('/store'),
+    },
+
+    {
+      text: 'Partners',
+      href: getPermalink('/partners'),
+    },
+    
+    {
+      text: 'More',
       links: [
         {
           text: 'Features (Anchor Link)',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Affiliates',
+          href: getPermalink('/affiliates'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Projects',
+          href: getPermalink('/projects'),
         },
         {
           text: 'About us',
           href: getPermalink('/about'),
         },
         {
-          text: 'Contact',
+          text: 'Contact Us',
           href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
-    {
+
+    /**{
       text: 'Landing',
       links: [
         {
@@ -85,6 +91,7 @@ export const headerData = {
         },
       ],
     },
+    
     {
       text: 'Blog',
       links: [
@@ -109,11 +116,11 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+    }, */
+    
+    
+
+    
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
@@ -121,47 +128,37 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Projects',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Mochi', href: 'https://mochi.vikshan.tech' },
+        { text: 'Amina', href: 'https://amina.vikshan.tech' },
+        { text: 'Pickle Rick', href: 'https://dub.sh/pickle' },
+        
       ],
     },
     {
       title: 'Platform',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Partners', href: getPermalink('/partners') },
+        { text: 'Affiliates', href: getPermalink('/affiliates') },
+        { text: 'Store', href: getPermalink('/store') },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Docs', href: 'https://docs.vikshan.tech' },
+        { text: 'Community Forum', href: 'https://vikshan.tech/forum' },
+        { text: 'Status', href: 'https://status.vikshan.tech/' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Careers', href: getPermalink('/careers') },
+
       ],
     },
   ],
@@ -170,14 +167,15 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
-  ],
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/ItsVikshan' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/vixshan/' },
+    { ariaLabel: 'Patreon', icon: 'tabler:brand-patreon', href: 'https://www.patreon.com/vikshan/' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/vixshan' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/vikshan/' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/vikshan/' },],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(~/assets/images/logo.png)]"></span>
+    © 2024 <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://vikshan.tech/"> Vikshan Media Group</a> · All rights reserved.
   `,
 };
