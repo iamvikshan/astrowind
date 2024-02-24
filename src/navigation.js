@@ -122,7 +122,7 @@ export const headerData = {
 
     
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Subscribe', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1', target: '_blank' }],
 };
 
 export const footerData = {
@@ -148,7 +148,7 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Docs', href: 'https://docs.vikshan.tech' },
-        { text: 'Community Forum', href: 'https://vikshan.tech/forum' },
+        { text: 'Discord', href: 'https://dub.sh/server' },
         { text: 'Status', href: 'https://status.vikshan.tech/' },
       ],
     },
