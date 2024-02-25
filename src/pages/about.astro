@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Vikshan',
 };
 ---
 
@@ -15,61 +15,63 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="About Vikshan"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: '~/assets/images/yt.png',
+      alt: 'Tech Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Vikshan's
+      <span class="text-accent dark:text-white highlight"> Tech Universe</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Hi, I'm Vikshan, a tech enthusiast from Africa studying at Kenyatta University. I'm inspired by TechTubers like
+      MKBHD, mrwhosetheboss, JRE, and Hugh Jeffreys. On my YouTube channel, I share my knowledge and passion for
+      technology through tech unboxing and reviews. I post one video every week. I'm seeking support for my channel
+      through my Ko-Fi page, Patreon, and a wishlist on Throne due to lack of necessary equipment for making videos.
+      Join me on this exciting journey!
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Statistics about Vikshan"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'YT-Subscribers', amount: '600+' },
+      { title: 'X Followers', amount: '200+' },
+      { title: 'YT-Views', amount: '3K+' },
+      { title: 'YT-Videos', amount: '5+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our YouTube Content"
+    subtitle="Explore the diverse range of content on Vikshan's Tech Universe."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Tech Reviews',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Discover in-depth reviews of the latest tech products and gadgets, helping you make informed purchasing decisions.',
+        icon: 'tabler:mood-check',
       },
       {
-        title: 'Interior Design',
+        title: 'Tech Unboxings',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Experience the excitement of unboxing new tech products firsthand, as Vikshan provides detailed insights and first impressions.',
+        icon: 'tabler:box',
       },
       {
-        title: 'Photography',
+        title: 'Weekly Tech Updates',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Consistent content with a new video posted every week, keeping viewers engaged and up-to-date with the latest in tech.',
+        icon: 'tabler:calendar',
       },
     ]}
   />
@@ -81,40 +83,40 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Tech Accessories',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Explore a wide range of tech accessories including headphones, chargers, and more to enhance your tech experience.',
+        icon: 'tabler:headphones',
       },
       {
-        title: 'Blog',
+        title: 'Smart Home Devices',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Discover the latest smart home devices and gadgets to make your home more connected and efficient.',
+        icon: 'tabler:smart-home',
       },
       {
-        title: 'Business',
+        title: 'Gaming Gear',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Get the scoop on the newest gaming gear, from consoles to accessories, and stay ahead in the gaming world.',
+        icon: 'tabler:device-gamepad-2',
       },
       {
-        title: 'Branding',
+        title: 'Laptops & PCs',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          'Stay informed about the latest laptops and PCs, from performance reviews to in-depth comparisons.',
+        icon: 'tabler:device-laptop',
       },
       {
-        title: 'Medical',
+        title: 'Mobile Devices',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+          'Stay up-to-date with the latest mobile devices, including smartphones and tablets, through detailed reviews and comparisons.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Fashion Design',
+        title: 'Wearable Tech',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'Explore the world of wearable tech, including smartwatches and fitness trackers, to stay connected and motivated.',
+        icon: 'tabler:device-watch',
       },
     ]}
     image={{
@@ -126,23 +128,23 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="My Values"
+    subtitle="Discover the core values that guide Vikshan's approach to tech content creation and community engagement."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Viewer-Centric Approach',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Vikshan values his community and engages with his viewers through comments, likes, and shares. His content is driven by the interests and feedback of his viewers.',
       },
       {
         title: 'Constant Improvement',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Vikshan is always learning and improving. He consistently seeks to enhance the quality of his videos and expand his tech knowledge.',
       },
       {
         title: 'Ethical Practices',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'Vikshan is committed to ethical practices. He provides honest reviews and values the trust of his viewers.',
       },
     ]}
   />
@@ -150,29 +152,31 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Vikshan's Achievements"
+    subtitle="Explore some of the key achievements and milestones in Vikshan's tech journey."
     isReversed={true}
     callToAction={{
-      text: 'See more',
-      href: '/',
+      text: 'YouTube Channel',
+      target: '_blank',
+      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        title: 'Influential Global Reach',
+        description:
+          "Vikshan's tech content has reached audiences worldwide, making a significant impact in the global tech community.",
         icon: 'tabler:globe',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Positive Feedback and Reviews',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+          'Vikshan consistently receives positive feedback and reviews from viewers, reflecting the quality and value of the tech content provided.',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Consistent Content Creation',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+          'Vikshan consistently posts one video every week, keeping his viewers engaged and up-to-date with the latest in tech.',
         icon: 'tabler:award',
       },
     ]}
@@ -181,48 +185,56 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
+    title="Connect with Vikshan"
+    tagline="Find me on"
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'YouTube',
+        icon: 'tabler:brand-youtube',
+        href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+        description: 'Subscribe to my channel for weekly tech unboxing and reviews.',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Ko-Fi',
+        icon: 'tabler:coffee',
+        href: 'https://ko-fi.com/vikshan',
+        description: 'Support my channel through my Ko-Fi page.',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        title: 'Twitter',
+        description: 'Follow for tech insights and discussions.',
+        icon: 'tabler:brand-twitter',
+        href: 'https://twitter.com/itsvikshan',
       },
       {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Throne',
+        icon: 'tabler:shopping-cart',
+        href: 'https://throne.com/vikshan',
+        description: 'Check out my wishlist on Throne and help me get the necessary equipment for making videos.',
       },
     ]}
   />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
+  <!-- <Features2
+  title="Contact Vikshan"
+  tagline="Get in Touch"
+  columns={2}
+  items={[
       {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+          title: 'Email',
+          description: 'Send us an email for inquiries and support.',
+          icon: 'tabler:mail',
+          link: 'mailto:contact@vikshan.com',
       },
       {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          title: 'Social Media',
+          description: 'Connect with us on social media for updates and discussions.',
+          icon: 'tabler:brand-twitter',
+          link: 'https://twitter.com/vikshan',
       },
-    ]}
-  />
+  ]}
+/> -->
 </Layout>

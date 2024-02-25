@@ -1,4 +1,4 @@
-import { getPermalink, /* getBlogPermalink */ } from './utils/permalinks';
+import { getPermalink /* getBlogPermalink */ } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -34,34 +34,30 @@ export const headerData = {
     {
       text: 'Partners',
       href: getPermalink('/partners'),
-    },
+    }, */
 
     {
       text: 'More',
       links: [
-         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        }, 
-        {
+        /* {
           text: 'Affiliates',
           href: getPermalink('/affiliates'),
         },
         {
           text: 'Projects',
           href: getPermalink('/projects'),
-        },
+        }, */
         {
-          text: 'About us',
+          text: 'About',
           href: getPermalink('/about'),
         },
-        {
+        /* {
           text: 'Contact Us',
           href: getPermalink('/contact'),
-        },
+        }, */
       ],
     },
-
+    /*
      {
       text: 'Landing',
       links: [
@@ -132,7 +128,7 @@ export const footerData = {
         { text: 'Pickle Rick', href: 'https://dub.sh/pickle' },
       ],
     },
-   /* {
+    /* {
       title: 'Platform',
       links: [
         { text: 'Partners', href: getPermalink('/partners') },
@@ -147,21 +143,21 @@ export const footerData = {
         { text: 'Discord', href: 'https://dub.sh/server' },
         { text: 'Status', href: 'https://status.vikshan.tech/' },
       ],
-    },
+    }, */
     {
       title: 'Company',
       links: [
         { text: 'About', href: getPermalink('/about') },
-        { text: 'Blog', href: getBlogPermalink() },
-        { text: 'Careers', href: getPermalink('/careers') },
+        /* { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Careers', href: getPermalink('/careers') }, */
       ],
-    }, */
-  ], 
+    },
+  ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
     { text: 'Cookie Policy', href: getPermalink('/cookies') },
-  ], 
+  ],
   socialLinks: [
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1' },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/ItsVikshan' },

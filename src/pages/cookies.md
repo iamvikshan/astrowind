@@ -3,9 +3,9 @@ title: 'Cookie Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Last updated February 25, 2024
+_Last updated:_ February 25, 2024
 
-This Cookie Policy explains how Vikshan Media Group ("**Company**," "**we**," "**us**," and "**our**") uses cookies and similar technologies to recognize you when you visit our website at  https://vikshan.tech ("**Website**"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+This Cookie Policy explains how Vikshan Media Group ("**Company**," "**we**," "**us**," and "**our**") uses cookies and similar technologies to recognize you when you visit our website at https://vikshan.tech ("**Website**"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
 In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information.
 
@@ -28,6 +28,7 @@ The Cookie Consent Manager can be found in the notification banner and on our we
 The specific types of first- and third-party cookies served through our Website and the purposes they perform are described in the table below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):
 
 ## Performance and functionality cookies:
+
 These cookies are used to enhance the performance and functionality of our Website but are non-essential to their use. However, without these cookies, certain functionality (like videos) may become unavailable.
 
 > Name:yt-remote-connected-devices
@@ -52,12 +53,13 @@ These cookies are used to enhance the performance and functionality of our Websi
 > Expires in:persistent
 
 ### Advertising cookies:
+
 These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests.
 
 > Name:VISITOR_INFO1_LIVE
 > Purpose:YouTube is a Google-owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites. Used by Google in combination with SID to verify Google user account and most recent login time.
 > Provider:.youtube.com
->Service:YouTube View Service Privacy Policy
+> Service:YouTube View Service Privacy Policy
 > Type:server_cookie
 > Expires in:5 months 27 days
 
@@ -69,6 +71,7 @@ These cookies are used to make advertising messages more relevant to you. They p
 > Expires in:session
 
 ### Unclassified cookies:
+
 These are cookies that have not yet been categorized. We are in the process of classifying these cookies with the help of their providers.
 
 > Name:VISITOR_PRIVACY_METADATA
@@ -79,6 +82,7 @@ These are cookies that have not yet been categorized. We are in the process of c
 ## How can I control cookies on my browser?
 
 As the means by which you can refuse cookies through your web browser controls vary from browser to browser, you should visit your browser's help menu for more information. The following is information about how to manage cookies on the most popular browsers:
+
 - <a href="https://support.google.com/chrome/answer/95647#zippy=%2Callow-or-block-cookies" target="_blank">Chrome</a>
 - <a href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank">Internet Explorer</a>
 - <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US" target="_blank">Firefox</a>
@@ -87,6 +91,7 @@ As the means by which you can refuse cookies through your web browser controls v
 - <a href="https://help.opera.com/en/latest/web-preferences/" target="_blank">Opera</a>
 
 In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit:
+
 - Digital Advertising Alliance
 - Digital Advertising Alliance of Canada
 - European Interactive Digital Advertising Alliance
