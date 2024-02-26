@@ -7,7 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -24,7 +24,7 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
+        variant: 'yt',
         text: 'Subscribe',
         href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
         target: '_blank',
@@ -155,7 +155,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-white dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -257,12 +257,12 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-white dark:bg-transparent"></div>
     </Fragment>
   </Features2>
   -->
 
-  <!-- HighlightedPosts Widget ******* 
+  <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
     title="Explore More Tech Insights on Our Blog"
@@ -270,7 +270,7 @@ const metadata = {
                   Each new article is a step towards mastering the latest in tech trends and tools.
                   Thank you for being a part of my tech journey!`}
   />
--->
+
   <!-- FAQs Widget ******************* -->
 
   <FAQs
@@ -328,7 +328,7 @@ const metadata = {
   <CallToAction
     actions={[
       {
-        variant: 'primary',
+        variant: 'yt',
         text: 'Subscribe Now',
         href: 'https://www.youtube.com/channel/[YourChannelID]',
         target: '_blank',

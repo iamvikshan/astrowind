@@ -1,4 +1,4 @@
-import { getPermalink /* getBlogPermalink */ } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -7,7 +7,7 @@ export const headerData = {
       href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
     },
 
-    /* {
+    {
       text: 'Blog',
       href: getBlogPermalink(),
       links: [
@@ -26,7 +26,7 @@ export const headerData = {
       ],
     },
 
-    {
+    /* {
       text: 'Store',
       href: getPermalink('/store'),
     },
@@ -86,7 +86,7 @@ export const headerData = {
           href: getPermalink('/landing/subscription'),
         },
       ],
-    },
+    }, 
     
     {
       text: 'Blog',
@@ -115,7 +115,14 @@ export const headerData = {
     }, */
   ],
 
-  actions: [{ text: 'Subscribe', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1', target: '_blank' }],
+  actions: [
+    {
+      text: 'Subscribe',
+      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+      icon: 'tabler:brand-youtube',
+      target: '_blank',
+    },
+  ],
 };
 
 export const footerData = {
@@ -135,7 +142,7 @@ export const footerData = {
         { text: 'Affiliates', href: getPermalink('/affiliates') },
         { text: 'Store', href: getPermalink('/store') },
       ],
-    },
+    }, */
     {
       title: 'Support',
       links: [
@@ -143,13 +150,13 @@ export const footerData = {
         { text: 'Discord', href: 'https://dub.sh/server' },
         { text: 'Status', href: 'https://status.vikshan.tech/' },
       ],
-    }, */
+    },
     {
       title: 'Company',
       links: [
         { text: 'About', href: getPermalink('/about') },
-        /* { text: 'Blog', href: getBlogPermalink() },
-        { text: 'Careers', href: getPermalink('/careers') }, */
+        { text: 'Blog', href: getBlogPermalink() },
+       /* { text: 'Careers', href: getPermalink('/careers') }, */
       ],
     },
   ],
@@ -162,7 +169,7 @@ export const footerData = {
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1' },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/ItsVikshan' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/vixshan/' },
-    { ariaLabel: 'Patreon', icon: 'tabler:brand-patreon', href: 'https://www.patreon.com/vikshan/' },
+    { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: 'https://www.ko-fi.com/vikshan/' },
     { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: 'https://matrix.to/#/#vikshan:matrix.org' },
     { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: 'https://l.vikshan.tech/server' },
   ],

@@ -4,6 +4,7 @@ import { SITE, APP_BLOG } from '~/utils/config';
 
 import { trim } from '~/utils/utils';
 
+export const YOUTUBE_URL = "https://www.youtube.com/@vikshan?sub_confirmation=1";
 export const trimSlash = (s: string) => trim(trim(s, '/'));
 const createPath = (...params: string[]) => {
   const paths = params
