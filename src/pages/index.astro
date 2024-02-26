@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { YOUTUBE_URL, KO_FI_URL } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Vikshan — Tech Enthusiast',
@@ -26,14 +27,14 @@ const metadata = {
       {
         variant: 'yt',
         text: 'Subscribe',
-        href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+        href: YOUTUBE_URL,
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },
-      {
+       {
         variant: 'secondary',
         text: 'Support Me on Ko-fi',
-        href: 'https://ko-fi.com/vikshan',
+        href: KO_FI_URL,
         target: '_blank',
         icon: 'tabler:coffee',
       },
@@ -330,14 +331,14 @@ const metadata = {
       {
         variant: 'yt',
         text: 'Subscribe Now',
-        href: 'https://www.youtube.com/channel/[YourChannelID]',
+        href: YOUTUBE_URL,
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },
-      {
+       {
         variant: 'secondary',
-        text: 'Donate on Ko-Fi',
-        href: 'https://ko-fi.com/vikshan',
+        text: 'Support Me on Ko-fi',
+        href: KO_FI_URL,
         target: '_blank',
         icon: 'tabler:coffee',
       },

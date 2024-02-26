@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { YOUTUBE_URL, KO_FI_URL } from '~/utils/permalinks';
 
 import type { MetaData } from '~/types';
 
@@ -32,14 +33,14 @@ const metadata: MetaData = {
       {
         variant: 'yt',
         text: 'Subscribe Now',
-        href: 'https://www.youtube.com/channel/[YourChannelID]',
+        href: YOUTUBE_URL,
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },
-      {
+       {
         variant: 'secondary',
-        text: 'Donate on Ko-Fi',
-        href: 'https://ko-fi.com/vikshan',
+        text: 'Support Me on Ko-fi',
+        href: KO_FI_URL,
         target: '_blank',
         icon: 'tabler:coffee',
       },

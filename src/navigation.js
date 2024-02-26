@@ -1,10 +1,24 @@
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
+import {
+  getPermalink,
+  getBlogPermalink,
+  YOUTUBE_URL,
+  TWITTER_URL,
+  INSTAGRAM_URL,
+  KO_FI_URL,
+  MATRIX_URL,
+  DISCORD_URL,
+  MOCHI_URL,
+  AMINA_URL,
+  PICKLE_URL,
+  DOCS_URL,
+  STATUS_URL,
+} from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'YouTube',
-      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+      href: YOUTUBE_URL,
     },
 
     {
@@ -130,9 +144,9 @@ export const footerData = {
     {
       title: 'Projects',
       links: [
-        { text: 'Mochi', href: 'https://mochi.vikshan.tech' },
-        { text: 'Amina', href: 'https://amina.vikshan.tech' },
-        { text: 'Pickle Rick', href: 'https://dub.sh/pickle' },
+        { text: 'Mochi', href: MOCHI_URL },
+        { text: 'Amina', href: AMINA_URL },
+        { text: 'Pickle Rick', href: PICKLE_URL },
       ],
     },
     /* {
@@ -146,9 +160,9 @@ export const footerData = {
     {
       title: 'Support',
       links: [
-        { text: 'Docs', href: 'https://docs.vikshan.tech' },
-        { text: 'Discord', href: 'https://dub.sh/server' },
-        { text: 'Status', href: 'https://status.vikshan.tech/' },
+        { text: 'Docs', href: DOCS_URL },
+        { text: 'Discord', href: DISCORD_URL },
+        { text: 'Status', href: STATUS_URL },
       ],
     },
     {
@@ -156,7 +170,7 @@ export const footerData = {
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
-       /* { text: 'Careers', href: getPermalink('/careers') }, */
+        /* { text: 'Careers', href: getPermalink('/careers') }, */
       ],
     },
   ],
@@ -166,15 +180,15 @@ export const footerData = {
     { text: 'Cookie Policy', href: getPermalink('/cookies') },
   ],
   socialLinks: [
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@vikshan?sub_confirmation=1' },
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/ItsVikshan' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/vixshan/' },
-    { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: 'https://www.ko-fi.com/vikshan/' },
-    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: 'https://matrix.to/#/#vikshan:matrix.org' },
-    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: 'https://l.vikshan.tech/server' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: YOUTUBE_URL },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: TWITTER_URL },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: INSTAGRAM_URL },
+    { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: KO_FI_URL },
+    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: MATRIX_URL },
+    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: DISCORD_URL },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(~/assets/images/logo.png)]"></span>
-    © 2024 <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://vikshan.tech/"> Vikshan Media Group</a> · All rights reserved.
+    © 2024 <a class="text-blue-600 hover:underline dark:text-gray-200" href="${getPermalink()}"> Vikshan Media Group</a> · All rights reserved.
   `,
 };
