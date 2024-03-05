@@ -11,7 +11,7 @@ export const TWITTER_URL = 'https://twitter.com/itsvikshan';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/vikshan';
 export const INSTAGRAM_URL = 'https://www.instagram.com/vixshan';
 export const FACEBOOK_URL = 'https://www.facebook.com/itsvikshan';
-export const KO_FI_URL = 'https://ko-fi.com/vikshan';
+export const KOFI_URL = 'https://ko-fi.com/vikshan';
 export const PATREON_URL = 'https://www.patreon.com/vikshan';
 export const MATRIX_URL = 'https://matrix.to/#/#vikshan:matrix.org';
 export const DISCORD_URL = 'https://l.vikshan.tech/server';
@@ -20,6 +20,18 @@ export const AMINA_URL = 'https://amina.vikshan.tech';
 export const PICKLE_URL = 'https://dub.sh/pickle';
 export const DOCS_URL = 'https://docs.vikshan.tech';
 export const STATUS_URL = 'https://status.vikshan.tech';
+
+const SHORT_URL_BASE = 'https://l.vikshan.tech';
+
+export const getShortUrl = (destination = '') => {
+  let shortUrl = SHORT_URL_BASE;
+
+  if (destination) {
+    shortUrl += `/${destination}`;
+  }
+
+  return shortUrl;
+};
 
 export const trimSlash = (s: string) => trim(trim(s, '/'));
 const createPath = (...params: string[]) => {

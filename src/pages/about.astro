@@ -5,6 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { YOUTUBE_URL, KOFI_URL } from '~/utils/permalinks';
 
 const metadata = {
   title: 'About Vikshan',
@@ -159,7 +160,7 @@ const metadata = {
       variant: 'yt',
       text: 'YouTube Channel',
       target: '_blank',
-      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+      href: YOUTUBE_URL,
     }}
     items={[
       {
@@ -193,13 +194,13 @@ const metadata = {
       {
         title: 'YouTube',
         icon: 'tabler:brand-youtube',
-        href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+        href: YOUTUBE_URL,
         description: 'Subscribe to my channel for weekly tech unboxing and reviews.',
       },
       {
         title: 'Ko-Fi',
         icon: 'tabler:coffee',
-        href: 'https://ko-fi.com/vikshan',
+        href: KOFI_URL,
         description: 'Support my channel through my Ko-Fi page.',
       },
       {

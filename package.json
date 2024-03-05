@@ -10,6 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "f": "prettier -w .",
+    "u": "git pull && npm update && npm run f",
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
