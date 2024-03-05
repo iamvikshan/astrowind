@@ -11,7 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { YOUTUBE_URL, KOFI_URL } from '~/utils/permalinks';
+import { getShortUrl, KOFI_URL } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Vikshan — Tech Enthusiast',
@@ -27,7 +27,7 @@ const metadata = {
       {
         variant: 'yt',
         text: 'Subscribe',
-        href: YOUTUBE_URL,
+        href: getShortUrl('youtube'),
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },
@@ -331,7 +331,7 @@ const metadata = {
       {
         variant: 'yt',
         text: 'Subscribe Now',
-        href: YOUTUBE_URL,
+        href: getShortUrl('youtube'),
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },

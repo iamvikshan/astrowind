@@ -1,24 +1,21 @@
 import {
   getPermalink,
   getBlogPermalink,
-  YOUTUBE_URL,
   TWITTER_URL,
   INSTAGRAM_URL,
   KOFI_URL,
-  MATRIX_URL,
-  DISCORD_URL,
   MOCHI_URL,
   AMINA_URL,
-  PICKLE_URL,
   DOCS_URL,
   STATUS_URL,
+  getShortUrl,
 } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'YouTube',
-      href: YOUTUBE_URL,
+      href: getShortUrl('youtube'),
     },
 
     {
@@ -132,7 +129,7 @@ export const headerData = {
   actions: [
     {
       text: 'Subscribe',
-      href: 'https://www.youtube.com/@vikshan?sub_confirmation=1',
+      href: getShortUrl('youtube'),
       icon: 'tabler:brand-youtube',
       target: '_blank',
     },
@@ -146,7 +143,7 @@ export const footerData = {
       links: [
         { text: 'Mochi', href: MOCHI_URL },
         { text: 'Amina', href: AMINA_URL },
-        { text: 'Pickle Rick', href: PICKLE_URL },
+        { text: 'Pickle Rick', href: getShortUrl('pickle') },
       ],
     },
     /* {
@@ -161,8 +158,8 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Docs', href: DOCS_URL },
-        { text: 'Discord', href: DISCORD_URL },
-        { text: 'Status', href: STATUS_URL },
+        { text: 'Discord', href: getShortUrl('discord') },
+        { text: 'Status Page', href: STATUS_URL },
       ],
     },
     {
@@ -180,12 +177,12 @@ export const footerData = {
     { text: 'Cookie Policy', href: getPermalink('/cookies') },
   ],
   socialLinks: [
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: YOUTUBE_URL },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: getShortUrl('youtube') },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: TWITTER_URL },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: INSTAGRAM_URL },
     { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: KOFI_URL },
-    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: MATRIX_URL },
-    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: DISCORD_URL },
+    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: getShortUrl('matrix') },
+    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: getShortUrl('discord') },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(~/assets/images/logo.png)]"></span>

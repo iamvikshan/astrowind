@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { YOUTUBE_URL, KOFI_URL } from '~/utils/permalinks';
+import { getShortUrl, KOFI_URL } from '~/utils/permalinks';
 
 import type { MetaData } from '~/types';
 
@@ -33,7 +33,7 @@ const metadata: MetaData = {
       {
         variant: 'yt',
         text: 'Subscribe Now',
-        href: YOUTUBE_URL,
+        href: getShortUrl('youtube'),
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },

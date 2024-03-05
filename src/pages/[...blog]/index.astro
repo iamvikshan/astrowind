@@ -7,7 +7,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import SinglePost from '~/components/blog/SinglePost.astro';
 import ToBlogLink from '~/components/blog/ToBlogLink.astro';
 
-import { getCanonical, getPermalink, YOUTUBE_URL, KOFI_URL } from '~/utils/permalinks';
+import { getCanonical, getPermalink, getShortUrl, KOFI_URL } from '~/utils/permalinks';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getStaticPathsBlogPost, blogPostRobots } from '~/utils/blog';
 import { findImage } from '~/utils/images';
@@ -55,7 +55,7 @@ const metadata = merge(
       {
         variant: 'yt',
         text: 'Subscribe Now',
-        href: YOUTUBE_URL,
+        href: getShortUrl('youtube'),
         target: '_blank',
         icon: 'tabler:brand-youtube',
       },
