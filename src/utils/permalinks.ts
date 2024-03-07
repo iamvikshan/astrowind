@@ -16,6 +16,7 @@ export const MOCHI_URL = 'https://mochi.vikshan.tech';
 export const AMINA_URL = 'https://amina.vikshan.tech';
 export const DOCS_URL = 'https://docs.vikshan.tech';
 export const STATUS_URL = 'https://status.vikshan.tech';
+export const ANALYTICS_URL = 'https://simple.vikshan.tech';
 
 const SHORT_URL_BASE = 'https://go.vikshan.tech';
 

@@ -16,9 +16,6 @@
         },
         "trailingSlash": {
           "type": "boolean"
-        },
-        "googleSiteVerificationId": {
-          "type": "string"
         }
       },
       "required": ["name", "site", "base", "trailingSlash"],

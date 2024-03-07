@@ -91,3 +91,26 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.analytics-badge {
+  font-size: 70%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.analytics-badge img {
+  width: 70%;
+}
+
+/* Styles for tablets and mobile devices */
+@media (max-width: 768px) {
+  .analytics-badge {
+    position: static;
+    margin: 20px 0;
+  }
+}

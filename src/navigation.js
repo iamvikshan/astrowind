@@ -9,6 +9,7 @@ import {
   DOCS_URL,
   STATUS_URL,
   getShortUrl,
+  ANALYTICS_URL,
 } from './utils/permalinks';
 
 export const headerData = {
@@ -168,6 +169,7 @@ export const footerData = {
         { text: 'About', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
         /* { text: 'Careers', href: getPermalink('/careers') }, */
+        { text: 'Analytics', href: ANALYTICS_URL },
       ],
     },
   ],

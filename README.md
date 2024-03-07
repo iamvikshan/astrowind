@@ -150,8 +150,6 @@ site:
   base: '/' # Change this if you need to deploy to Github Pages, for example
   trailingSlash: false # Generate permalinks with or without "/" at the end
 
-  googleSiteVerificationId: false # Or some value,
-
 # Default SEO metadata
 metadata:
   title:
