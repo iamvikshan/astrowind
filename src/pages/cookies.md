@@ -121,3 +121,9 @@ The date at the top of this Cookie Policy indicates when it was last updated.
 ## Where can I get further information?
 
 If you have any questions about our use of cookies or other technologies, please email us at privacy@vikshan.tech
+
+<div style="position: fixed; right: 0; bottom: 0; font-size: 60%;">
+
+_We use Simple Analytics_ <a href="https://simpleanalytics.com/vikshan.tech?utm_source=vikshan.tech&utm_content=badge" referrerpolicy="origin" target="_blank"><picture><source srcset="https://simpleanalyticsbadges.com/vikshan.tech?mode=dark&radius=10&logo=38bdf8" media="(prefers-color-scheme: dark)" /><img src="https://simpleanalyticsbadges.com/vikshan.tech?mode=light&radius=10&logo=38bdf8" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" style="width: 60%;" /></picture></a>
+
+</div>

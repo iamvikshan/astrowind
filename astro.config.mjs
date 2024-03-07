@@ -13,16 +13,9 @@ import tasks from './src/utils/tasks';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 
-import { ANALYTICS, SITE } from './src/utils/config.ts';
+import { SITE } from './src/utils/config.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-const whenExternalScripts = (items = []) =>
-  ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown
-    ? Array.isArray(items)
-      ? items.map((item) => item())
-      : [items()]
-    : [];
 
 export default defineConfig({
   site: SITE.site,

@@ -127,7 +127,17 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 We may need to share your personal information in the following situations:
 
 - **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
-- **When we use Google Analytics.** We may share your information with Google Analytics to track and analyze the use of the Services. To opt out of being tracked by Google Analytics across the Services, see <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out Browser Add-on</a>. For more information on the privacy practices of Google, please visit the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a> page.
+- **When we use Google Analytics.** This site uses <a href="https://simpleanalytics.com/vikshan.tech?utm_source=vikshan.tech&utm_content=badge" target="_blank"> Simple Analytics</a>, but some of our services might use Google Analytics(GA). When we use GA, we may share your information with Google Analytics to track and analyze the use of the Services. To opt out of being tracked by Google Analytics across the Services, see <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out Browser Add-on</a>. For more information on the privacy practices of Google, please visit the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a> page.
+
+**Here is a list how and which third parties we may share your information with, which are inclusive but not limited to:**
+
+1. **Google Analytics** via <a href="https://go.vikshan.tech" target="_blannk">go.vikshan.tech</a> and <a href="https://ko-fi.com/vikshan" target="_blannk">ko-fi.com/vikshan</a>
+
+- <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.
+
+2. **Simple Analytics** via <a href="https://vikshan.tech" target="_blannk">vikshan.tech</a>
+
+- <a href="https://simpleanalytics.com/privacy" target="_blank">Simple Analytics Privacy Policy</a>.
 
 ### 5. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
 
@@ -408,3 +418,9 @@ If you have questions or comments about this notice, you may email us at [privac
 ## 15. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
 You have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please visit: [vikshan.tech/contact](vikshan.tech/contact).
+
+<div style="position: fixed; right: 0; bottom: 0; font-size: 60%;">
+
+_We use Simple Analytics_ <a href="https://simpleanalytics.com/vikshan.tech?utm_source=vikshan.tech&utm_content=badge" referrerpolicy="origin" target="_blank"><picture><source srcset="https://simpleanalyticsbadges.com/vikshan.tech?mode=dark&radius=10&logo=38bdf8" media="(prefers-color-scheme: dark)" /><img src="https://simpleanalyticsbadges.com/vikshan.tech?mode=light&radius=10&logo=38bdf8" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" style="width: 60%;" /></picture></a>
+
+</div>
