@@ -139,6 +139,10 @@ We may need to share your personal information in the following situations:
 
 - <a href="https://simpleanalytics.com/privacy" target="_blank">Simple Analytics Privacy Policy</a>.
 
+3. **Cloudflare** via the domain <a href="https://vikshan.tech" target="_blannk">vikshan.tech</a> and it's subdomains. We use Cloudflare to protect our website from DDoS attacks and to provide you with a faster and more secure experience.
+
+- <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</a>.
+
 ### 5. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
 
 **\*In Short:** We are not responsible for the safety of any information that you share with third parties that we may link to or who advertise on our Services, but are not affiliated with, our Services.\*

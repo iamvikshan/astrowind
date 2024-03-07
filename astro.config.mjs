@@ -6,7 +6,6 @@ import { defineConfig, squooshImageService } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
-import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
 import tasks from './src/utils/tasks';
@@ -46,12 +45,6 @@ export default defineConfig({
         ],
       },
     }),
-
-    ...whenExternalScripts(() =>
-      partytown({
-        config: { forward: ['dataLayer.push'] },
-      })
-    ),
 
     compress({
       CSS: true,
