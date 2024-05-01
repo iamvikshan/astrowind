@@ -63,10 +63,10 @@ export const headerData = {
           text: 'About',
           href: getPermalink('/about'),
         },
-        /* {
-          text: 'Contact Us',
+        {
+          text: 'Contact',
           href: getPermalink('/contact'),
-        }, */
+        },
       ],
     },
     /*
