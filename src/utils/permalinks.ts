@@ -6,10 +6,10 @@ import { trim } from '~/utils/utils';
 
 // Add your custom links here
 export const GITHUB_URL = 'https://github.com/vixshan';
-export const TWITTER_URL = 'https://twitter.com/itsvikshan';
+export const TWITTER_URL = 'https://twitter.com/iamvikshan';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/vikshan';
-export const INSTAGRAM_URL = 'https://www.instagram.com/vixshan';
-export const FACEBOOK_URL = 'https://www.facebook.com/itsvikshan';
+export const INSTAGRAM_URL = 'https://www.instagram.com/iamvikshan';
+export const FACEBOOK_URL = 'https://www.facebook.com/iamvikshan';
 export const KOFI_URL = 'https://ko-fi.com/vikshan';
 export const PATREON_URL = 'https://www.patreon.com/vikshan';
 export const MOCHI_URL = 'https://mochi.vikshan.tech';

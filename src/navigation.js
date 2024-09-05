@@ -17,6 +17,7 @@ export const headerData = {
     {
       text: 'YouTube',
       href: getShortUrl('youtube'),
+      target: '_blank',
     },
 
     {
@@ -142,9 +143,9 @@ export const footerData = {
     {
       title: 'Projects',
       links: [
-        { text: 'Mochi', href: MOCHI_URL },
-        { text: 'Amina', href: AMINA_URL },
-        { text: 'Pickle Rick', href: getShortUrl('pickle') },
+        { text: 'Mochi', href: MOCHI_URL, target: '_blank' },
+        { text: 'Amina', href: AMINA_URL, target: '_blank' },
+        { text: 'Pickle Rick', target: '_blank', href: getShortUrl('pickle') },
       ],
     },
     /* {
@@ -158,9 +159,9 @@ export const footerData = {
     {
       title: 'Support',
       links: [
-        { text: 'Docs', href: DOCS_URL },
-        { text: 'Discord', href: getShortUrl('discord') },
-        { text: 'Status Page', href: STATUS_URL },
+        { text: 'Docs', href: DOCS_URL, target: '_blank' },
+        { text: 'Discord', href: getShortUrl('discord'), target: '_blank' },
+        { text: 'Status Page', href: STATUS_URL, target: '_blank' },
       ],
     },
     {
@@ -169,7 +170,7 @@ export const footerData = {
         { text: 'About', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
         /* { text: 'Careers', href: getPermalink('/careers') }, */
-        { text: 'Analytics', href: ANALYTICS_URL },
+        { text: 'Analytics', href: ANALYTICS_URL, target: '_blank' },
       ],
     },
   ],
@@ -179,12 +180,12 @@ export const footerData = {
     { text: 'Cookie Policy', href: getPermalink('/cookies') },
   ],
   socialLinks: [
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: getShortUrl('youtube') },
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: TWITTER_URL },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: INSTAGRAM_URL },
-    { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: KOFI_URL },
-    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: getShortUrl('matrix') },
-    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: getShortUrl('discord') },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: getShortUrl('youtube'), target: '_blank' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: TWITTER_URL, target: '_blank' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: INSTAGRAM_URL, target: '_blank' },
+    { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: KOFI_URL, target: '_blank' },
+    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: getShortUrl('matrix'), target: '_blank' },
+    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: getShortUrl('discord'), target: '_blank' },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(~/assets/images/logo.png)]"></span>
