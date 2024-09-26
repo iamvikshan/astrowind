@@ -1,5 +1,5 @@
 site:
-  name: Vikshan
+  name: vikshan
   site: 'https://vikshan.me'
   base: '/'
   trailingSlash: false
