@@ -3,7 +3,14 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Post } from '~/types';
 import { APP_BLOG } from '~/utils/config';
-import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
+import {
+  cleanSlug,
+  trimSlash,
+  BLOG_BASE,
+  POST_PERMALINK_PATTERN,
+  CATEGORY_BASE,
+  TAG_BASE,
+} from './permalinks';
 
 const generatePermalink = async ({
   id,
@@ -207,7 +214,9 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
 
   return Array.from(categories).flatMap((category) =>
     paginate(
-      posts.filter((post) => typeof post.category === 'string' && category === post.category.toLowerCase()),
+      posts.filter(
+        (post) => typeof post.category === 'string' && category === post.category.toLowerCase()
+      ),
       {
         params: { category: category, blog: CATEGORY_BASE || undefined },
         pageSize: blogPostsPerPage,
@@ -229,7 +238,9 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
 
   return Array.from(tags).flatMap((tag) =>
     paginate(
-      posts.filter((post) => Array.isArray(post.tags) && post.tags.find((elem) => elem.toLowerCase() === tag)),
+      posts.filter(
+        (post) => Array.isArray(post.tags) && post.tags.find((elem) => elem.toLowerCase() === tag)
+      ),
       {
         params: { tag: tag, blog: TAG_BASE || undefined },
         pageSize: blogPostsPerPage,
@@ -244,13 +255,17 @@ export function getRelatedPosts(allPosts: Post[], currentSlug: string, currentTa
   if (!isBlogEnabled || !isRelatedPostsEnabled) return [];
 
   const relatedPosts = getRandomizedPosts(
-    allPosts.filter((post) => post.slug !== currentSlug && post.tags?.some((tag) => currentTags.includes(tag))),
+    allPosts.filter(
+      (post) => post.slug !== currentSlug && post.tags?.some((tag) => currentTags.includes(tag))
+    ),
     APP_BLOG.relatedPostsCount
   );
 
   if (relatedPosts.length < APP_BLOG.relatedPostsCount) {
     const morePosts = getRandomizedPosts(
-      allPosts.filter((post) => post.slug !== currentSlug && !post.tags?.some((tag) => currentTags.includes(tag))),
+      allPosts.filter(
+        (post) => post.slug !== currentSlug && !post.tags?.some((tag) => currentTags.includes(tag))
+      ),
       APP_BLOG.relatedPostsCount - relatedPosts.length
     );
     relatedPosts.push(...morePosts);

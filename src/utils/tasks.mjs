@@ -36,10 +36,14 @@ const tasksIntegration = () => {
                 flags: 'w',
               });
             } else {
-              fs.writeFileSync(robotsTxtFileInOut, robotsTxt.replace(pattern, `Sitemap: ${sitemapUrl}`), {
-                encoding: 'utf8',
-                flags: 'w',
-              });
+              fs.writeFileSync(
+                robotsTxtFileInOut,
+                robotsTxt.replace(pattern, `Sitemap: ${sitemapUrl}`),
+                {
+                  encoding: 'utf8',
+                  flags: 'w',
+                }
+              );
             }
           }
         } catch (err) {

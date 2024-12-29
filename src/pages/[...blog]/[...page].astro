@@ -38,7 +38,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+  <section class="mx-auto max-w-4xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
     <Headline
       subtitle="Discover news, tutorials, resources, and other interesting content related to technology and more."
     >
@@ -70,12 +70,14 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Vikshan's Tech Universe<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+      Vikshan's Tech Universe<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"
+      ></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Join the tech adventure and stay updated with the latest in technology! <br class="hidden md:inline" /> Don't miss
-      out on the latest exciting tech unboxing and reviews! :P
+      Join the tech adventure and stay updated with the latest in technology! <br
+        class="hidden md:inline"
+      /> Don't miss out on the latest exciting tech unboxing and reviews! :P
     </Fragment>
   </CallToAction>
 </Layout>

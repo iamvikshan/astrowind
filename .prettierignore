@@ -2,3 +2,5 @@ dist
 node_modules
 .changeset
 src/content/post/profittube01.mdx
+src/pages/privacy.mdx
+src/content/post/profittube.mdx

@@ -4,7 +4,6 @@ import {
   TWITTER_URL,
   INSTAGRAM_URL,
   KOFI_URL,
-  MOCHI_URL,
   AMINA_URL,
   DOCS_URL,
   STATUS_URL,
@@ -143,7 +142,6 @@ export const footerData = {
     {
       title: 'Projects',
       links: [
-        { text: 'Mochi', href: MOCHI_URL, target: '_blank' },
         { text: 'Amina', href: AMINA_URL, target: '_blank' },
         { text: 'Pickle Rick', target: '_blank', href: getShortUrl('pickle') },
       ],
@@ -175,17 +173,39 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-    { text: 'Cookie Policy', href: getPermalink('/cookies') },
+    { text: 'Terms •', href: getPermalink('/terms') },
+    { text: 'Privacy Policy •', href: getPermalink('/privacy') },
+    { text: 'Cookie Policy •', href: getPermalink('/cookies') },
+    { text: 'Review Terms •', href: getPermalink('/reviews') },
+    { text: 'Sponsorship Terms', href: getPermalink('/sponsorship') },
   ],
   socialLinks: [
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: getShortUrl('youtube'), target: '_blank' },
+    {
+      ariaLabel: 'YouTube',
+      icon: 'tabler:brand-youtube',
+      href: getShortUrl('youtube'),
+      target: '_blank',
+    },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: TWITTER_URL, target: '_blank' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: INSTAGRAM_URL, target: '_blank' },
+    {
+      ariaLabel: 'Instagram',
+      icon: 'tabler:brand-instagram',
+      href: INSTAGRAM_URL,
+      target: '_blank',
+    },
     { ariaLabel: 'Ko-fi', icon: 'tabler:coffee', href: KOFI_URL, target: '_blank' },
-    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: getShortUrl('matrix'), target: '_blank' },
-    { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: getShortUrl('discord'), target: '_blank' },
+    {
+      ariaLabel: 'Matrix',
+      icon: 'tabler:brand-matrix',
+      href: getShortUrl('matrix'),
+      target: '_blank',
+    },
+    {
+      ariaLabel: 'Discord',
+      icon: 'tabler:brand-discord',
+      href: getShortUrl('discord'),
+      target: '_blank',
+    },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(~/assets/images/logo.png)]"></span>

@@ -12,7 +12,6 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/iamvikshan';
 export const FACEBOOK_URL = 'https://www.facebook.com/iamvikshan';
 export const KOFI_URL = 'https://ko-fi.com/vikshan';
 export const PATREON_URL = 'https://www.patreon.com/vikshan';
-export const MOCHI_URL = 'https://mochi.vikshan.tech';
 export const AMINA_URL = 'https://amina.vikshan.tech';
 export const DOCS_URL = 'https://docs.vikshan.tech';
 export const STATUS_URL = 'https://status.vikshan.tech';

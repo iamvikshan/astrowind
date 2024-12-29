@@ -38,7 +38,15 @@ const metadata = merge(
     openGraph: {
       type: 'article',
       ...(image
-        ? { images: [{ url: image, width: (image as ImageMetadata)?.width, height: (image as ImageMetadata)?.height }] }
+        ? {
+            images: [
+              {
+                url: image,
+                width: (image as ImageMetadata)?.width,
+                height: (image as ImageMetadata)?.height,
+              },
+            ],
+          }
         : {}),
     },
   },
@@ -69,12 +77,14 @@ const metadata = merge(
     ]}
   >
     <Fragment slot="title">
-      Vikshan's Tech Universe<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+      Vikshan's Tech Universe<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"
+      ></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Join the tech adventure and stay updated with the latest in technology! <br class="hidden md:inline" /> Don't miss
-      out on the latest exciting tech unboxing and reviews! :P
+      Join the tech adventure and stay updated with the latest in technology! <br
+        class="hidden md:inline"
+      /> Don't miss out on the latest exciting tech unboxing and reviews! :P
     </Fragment>
   </CallToAction>
 </Layout>
