@@ -1,0 +1,63 @@
+{
+  "name": "astrowind",
+  "bucket": "astrowind",
+  "preset": "astro",
+  "env": "production",
+  "prefix": "20241229082708",
+  "not-first-run": true,
+  "function": {
+    "id": 34931,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 33436,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1735467126,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1735461121,
+    "name": "astrowind",
+    "domain_name": "ca1dskrgb2.map.azionedge.net",
+    "url": "https://ca1dskrgb2.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 177295,
+      "origin-key": "aae431a4-f0ba-44c8-a052-0b5f4ba3e375",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 341271,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 341272,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 341273,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      },
+      {
+        "id": 341274,
+        "name": "Redirect to index.html for Subpaths",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}

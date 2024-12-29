@@ -24,3 +24,6 @@ pnpm-lock.yaml
 .astro
 package-lock.json
 bun.lockb
+#Paths added by Azion CLI
+.edge/
+.vulcan
