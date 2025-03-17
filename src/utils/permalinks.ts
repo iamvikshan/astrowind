@@ -12,12 +12,12 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/iamvikshan';
 export const FACEBOOK_URL = 'https://www.facebook.com/iamvikshan';
 export const KOFI_URL = 'https://ko-fi.com/vikshan';
 export const PATREON_URL = 'https://www.patreon.com/vikshan';
-export const AMINA_URL = 'https://amina.vikshan.tech';
-export const DOCS_URL = 'https://docs.vikshan.tech';
-export const STATUS_URL = 'https://status.vikshan.tech';
-export const ANALYTICS_URL = 'https://simple.vikshan.tech';
+export const AMINA_URL = 'https://amina.vikshan.me';
+export const DOCS_URL = 'https://docs.vikshan.me';
+export const STATUS_URL = 'https://status.vikshan.me';
+export const ANALYTICS_URL = 'https://simple.vikshan.me';
 
-const SHORT_URL_BASE = 'https://go.vikshan.tech';
+const SHORT_URL_BASE = 'https://go.vikshan.me';
 
 export const getShortUrl = (destination = '') => {
   let shortUrl = SHORT_URL_BASE;
