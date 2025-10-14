@@ -1,38 +1,65 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
 version: 2
 updates:
-  # Enable version updates for NPM
+  # Enable version updates for npm
   - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+
+    open-pull-requests-limit: 10
+    reviewers:
+      - 'iamvikshan'
+    assignees:
+      - 'iamvikshan'
+    commit-message:
+      prefix: 'chore(deps)'
+      prefix-development: 'chore(deps-dev)'
+      include: 'scope'
+    labels:
+      - 'dependencies'
+      - 'npm'
+    # Group minor and patch updates together
+    groups:
+      astro-dependencies:
+        patterns:
+          - 'astro*'
+          - '@astrojs/*'
+      development-dependencies:
+        dependency-type: 'development'
+        update-types:
+          - 'minor'
+          - 'patch'
+      production-dependencies:
+        dependency-type: 'production'
+        update-types:
+          - 'minor'
+          - 'patch'
+    # Allow both direct and indirect updates
+    versioning-strategy: increase
+    # Ignore specific versions if needed
+    # ignore:
+    #   - dependency-name: "package-name"
+    #     versions: ["1.x", "2.x"]
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'daily'
     open-pull-requests-limit: 5
     reviewers:
-      - 'vixshan'
+      - 'iamvikshan'
+    assignees:
+      - 'iamvikshan'
+    commit-message:
+      prefix: 'chore(ci)'
+      include: 'scope'
     labels:
       - 'dependencies'
-    ignore:
-      #     - dependency-name: "discord.js"
-
-  # Enable version updates for Docker
-  # - package-ecosystem: 'docker'
-  # Look for a `Dockerfile` in the `root` directory
-  # directory: '/'
-  # Check for updates once a week
-  # schedule:
-  #  interval: 'daily'
-
-  # Maintain dependencies for GitHub Actions
-  # - package-ecosystem: "github-actions"
-  # directory: "/"
-  #  schedule:
-  #    interval: "daily"
-  #  open-pull-requests-limit: 5
-  # reviewers:
-  #   - "vixshan"
-  #  labels:
-  #    - "actions"
+      - 'github-actions'
+      - 'ci'
+    # Group all GitHub Actions updates together
+    groups:
+      github-actions:
+        patterns:
+          - '*'
